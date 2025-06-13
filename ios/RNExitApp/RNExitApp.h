@@ -7,7 +7,7 @@
 #endif
 
 #if RCT_NEW_ARCH_ENABLED
-#import <React-Codegen/RNAppControlSpec/RNAppControlSpec.h>
+#import <ReactCodegen/RNAppControlSpec/RNAppControlSpec.h>
 #endif
 
 @interface RNAppControl : NSObject <RCTBridgeModule>

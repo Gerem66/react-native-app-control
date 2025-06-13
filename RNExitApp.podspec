@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 		"CLANG_CXX_LANGUAGE_STANDARD" => "c++17"
 	  }
   
-	  s.dependency "React-Codegen"
+	  s.dependency "ReactCodegen"
 	  s.dependency "React-RCTFabric"
 	  s.dependency "RCT-Folly"
 	  s.dependency "RCTRequired"
