@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07927F51240E83A80037032C /* RNExitApp.m in Sources */ = {isa = PBXBuildFile; fileRef = AF75E3F71E2FBEDC005136CC /* RNExitApp.m */; };
-		AF75E3F81E2FBEDC005136CC /* RNExitApp.m in Sources */ = {isa = PBXBuildFile; fileRef = AF75E3F71E2FBEDC005136CC /* RNExitApp.m */; };
+		07927F51240E83A80037032C /* RNAppControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF75E3F71E2FBEDC005136CC /* RNAppControl.m */; };
+		AF75E3F81E2FBEDC005136CC /* RNAppControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF75E3F71E2FBEDC005136CC /* RNAppControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,9 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07927F57240E83A80037032C /* libRNExitApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNExitApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15209BEF1D250F63000D0F44 /* libRNExitApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNExitApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF75E3F71E2FBEDC005136CC /* RNExitApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNExitApp.m; path = RNExitApp/RNExitApp.m; sourceTree = SOURCE_ROOT; };
+		07927F57240E83A80037032C /* libRNAppControl-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNAppControl-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15209BEF1D250F63000D0F44 /* libRNAppControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAppControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF75E3F71E2FBEDC005136CC /* RNAppControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNAppControl.m; path = RNAppControl/RNAppControl.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +56,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15209BF01D250F63000D0F44 /* RNExitApp */ = {
+		15209BF01D250F63000D0F44 /* RNAppControl */ = {
 			isa = PBXGroup;
 			children = (
-				AF75E3F71E2FBEDC005136CC /* RNExitApp.m */,
+				AF75E3F71E2FBEDC005136CC /* RNAppControl.m */,
 			);
-			path = RNExitApp;
+			path = RNAppControl;
 			sourceTree = "<group>";
 		};
 		327633391BFAAD7E004DA88E = {
 			isa = PBXGroup;
 			children = (
-				15209BF01D250F63000D0F44 /* RNExitApp */,
+				15209BF01D250F63000D0F44 /* RNAppControl */,
 				327633431BFAAD7E004DA88E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,8 +75,8 @@
 		327633431BFAAD7E004DA88E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15209BEF1D250F63000D0F44 /* libRNExitApp.a */,
-				07927F57240E83A80037032C /* libRNExitApp-tvOS.a */,
+				15209BEF1D250F63000D0F44 /* libRNAppControl.a */,
+				07927F57240E83A80037032C /* libRNAppControl-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07927F4F240E83A80037032C /* RNExitApp-tvOS */ = {
+		07927F4F240E83A80037032C /* RNAppControl-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvOS" */;
+			buildConfigurationList = 07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNAppControl-tvOS" */;
 			buildPhases = (
 				07927F50240E83A80037032C /* Sources */,
 				07927F52240E83A80037032C /* Frameworks */,
@@ -96,14 +96,14 @@
 			);
 			dependencies = (
 			);
-			name = "RNExitApp-tvOS";
-			productName = RNExitApp;
-			productReference = 07927F57240E83A80037032C /* libRNExitApp-tvOS.a */;
+			name = "RNAppControl-tvOS";
+			productName = RNAppControl;
+			productReference = 07927F57240E83A80037032C /* libRNAppControl-tvOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		15209BEE1D250F63000D0F44 /* RNExitApp */ = {
+		15209BEE1D250F63000D0F44 /* RNAppControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15209BF51D250F63000D0F44 /* Build configuration list for PBXNativeTarget "RNExitApp" */;
+			buildConfigurationList = 15209BF51D250F63000D0F44 /* Build configuration list for PBXNativeTarget "RNAppControl" */;
 			buildPhases = (
 				15209BEB1D250F63000D0F44 /* Sources */,
 				15209BEC1D250F63000D0F44 /* Frameworks */,
@@ -113,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = RNExitApp;
-			productName = RNExitApp;
-			productReference = 15209BEF1D250F63000D0F44 /* libRNExitApp.a */;
+			name = RNAppControl;
+			productName = RNAppControl;
+			productReference = 15209BEF1D250F63000D0F44 /* libRNAppControl.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3276333D1BFAAD7E004DA88E /* Build configuration list for PBXProject "RNExitApp" */;
+			buildConfigurationList = 3276333D1BFAAD7E004DA88E /* Build configuration list for PBXProject "RNAppControl" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -145,8 +145,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15209BEE1D250F63000D0F44 /* RNExitApp */,
-				07927F4F240E83A80037032C /* RNExitApp-tvOS */,
+				15209BEE1D250F63000D0F44 /* RNAppControl */,
+				07927F4F240E83A80037032C /* RNAppControl-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07927F51240E83A80037032C /* RNExitApp.m in Sources */,
+				07927F51240E83A80037032C /* RNAppControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF75E3F81E2FBEDC005136CC /* RNExitApp.m in Sources */,
+				AF75E3F81E2FBEDC005136CC /* RNAppControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvOS" */ = {
+		07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNAppControl-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07927F55240E83A80037032C /* Debug */,
@@ -365,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15209BF51D250F63000D0F44 /* Build configuration list for PBXNativeTarget "RNExitApp" */ = {
+		15209BF51D250F63000D0F44 /* Build configuration list for PBXNativeTarget "RNAppControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15209BF61D250F63000D0F44 /* Debug */,
@@ -374,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3276333D1BFAAD7E004DA88E /* Build configuration list for PBXProject "RNExitApp" */ = {
+		3276333D1BFAAD7E004DA88E /* Build configuration list for PBXProject "RNAppControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				327633541BFAAD7E004DA88E /* Debug */,

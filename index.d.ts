@@ -1,12 +1,13 @@
-// Type definitions for react-native-exit-app 1.0.0
-// Project: https://github.com/wumke/react-native-exit-app
+// Type definitions for react-native-app-control 1.0.0
+// Project: https://github.com/Gerem66/react-native-app-control
 // Definitions by: Anton Dyshkant <https://github.com/vyshkant>
 
-declare module 'react-native-exit-app' {
+declare module 'react-native-app-control' {
 
-    const RNExitApp: {
-        exitApp: () => void
+    const RNAppControl: {
+        Exit: () => void;
+        Restart: () => void;
     };
 
-    export = RNExitApp;
+    export = RNAppControl;
 }

@@ -1,4 +1,4 @@
-package com.github.wumke.RNExitApp;
+package com.github.Gerem66.RNAppControl;
 
 import androidx.annotation.Nullable;
 
@@ -11,13 +11,13 @@ import com.facebook.react.module.model.ReactModuleInfoProvider;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RNExitAppPackage extends TurboReactPackage {
+public class RNAppControlPackage extends TurboReactPackage {
 
     @Nullable
     @Override
     public NativeModule getModule(String name, ReactApplicationContext reactContext) {
-        if (name.equals(RNExitAppImpl.NAME)) {
-            return new RNExitApp(reactContext);
+        if (name.equals(RNAppControlImpl.NAME)) {
+            return new RNAppControl(reactContext);
         } else {
             return null;
         }
@@ -29,10 +29,10 @@ public class RNExitAppPackage extends TurboReactPackage {
             final Map<String, ReactModuleInfo> moduleInfos = new HashMap<>();
             boolean isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
             moduleInfos.put(
-                    RNExitAppImpl.NAME,
+                    RNAppControlImpl.NAME,
                     new ReactModuleInfo(
-                            RNExitAppImpl.NAME,
-                            RNExitAppImpl.NAME,
+                            RNAppControlImpl.NAME,
+                            RNAppControlImpl.NAME,
                             false, // canOverrideExistingModule
                             false, // needsEagerInit
                             false, // hasConstants

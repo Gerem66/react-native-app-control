@@ -1,18 +1,28 @@
 #import <UIKit/UIKit.h>
 
-#import "RNExitApp.h"
+#import "RNAppControl.h"
 
 #if RCT_NEW_ARCH_ENABLED
-#import <RNExitAppSpec/RNExitAppSpec.h>
+#import <RNAppControlSpec/RNAppControlSpec.h>
 #endif
 
-@implementation RNExitApp
+@implementation RNAppControl
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(exitApp)
+RCT_EXPORT_METHOD(Exit)
 {
     exit(0);
+};
+
+RCT_EXPORT_METHOD(Restart)
+{
+    // On iOS, we need to exit the app and let the system handle the restart
+    // The app will restart when the user taps on it again
+    // For a more seamless restart, we could use URL schemes but that requires additional setup
+    dispatch_async(dispatch_get_main_queue(), ^{
+        exit(0);
+    });
 };
 
 # pragma mark - New Architecture
@@ -22,7 +32,7 @@ RCT_EXPORT_METHOD(exitApp)
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
-    return std::make_shared<facebook::react::NativeRNExitAppSpecJSI>(params);
+    return std::make_shared<facebook::react::NativeRNAppControlSpecJSI>(params);
 }
 
 #endif

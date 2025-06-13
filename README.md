@@ -1,78 +1,47 @@
-# react-native-exit-app
-Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.
+# react-native-app-control
 
-NOTICE:
-- for React Native < 0.47 use react-native-exit-app <1.x.x
-- for React Native > 0.47 use react-native-exit-app >=1.x.x
-- React Native with **new architecture** enabled use react-native-exit-app >=2.x.x (**compatible with old architecture**)
+Exit / Restart your react native app. Does not invoke a crash notification.
 
 ## Setup
 
-NOTICE:
-Installation steps can be skipped in new architecture and newer React Native versions, just 
+React Native `>= 0.60` supports autolinking, so you can simply run:
 ```bash
-npm install react-native-exit-app --save
+npm install react-native-app-control
 ```
 
-Fast and easy:
+<details>
+<summary>Manual linking (for React Native < 0.60)</summary>
+
+If you are using React Native version < 0.60, you will need to link the library manually. Follow these steps:
+
 ```bash
-npm install react-native-exit-app --save
-react-native link react-native-exit-app
+npm install react-native-app-control
+react-native link react-native-app-control
 ```
 
-Or manual: add the latest version as dependeny to your package.json.
+</details>
 
-```javascript
-{
-  "name": "YourProject",
-  ...
-  },
-  "dependencies": {
-    ...
-    "react-native-exit-app": "0.1.0",
-    ...
-  }
-```
-
-#### iOS
-* Add RNExitApp.xcoderproj into your project in the Libraries folder.
-* Add the .a file on the General tab of your target under Linked Frameworks And Libraries
-* Add the .a file on the Build Phases tab of your target under Link Binary With Libraries
-
-#### Android
-* In the settings.gradle
-  ```
-    include ':react-native-exit-app', ':app'
-    project(':react-native-exit-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app/android')
-  ```
-* In the build.gradle
-  ```
-    compile project(':react-native-exit-app')
-  ```
-* In MainApplication.java
-  ```
-    import com.github.wumke.RNExitApp.RNExitAppPackage;
-    ...
-    @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-        ...
-        new RNExitAppPackage(),
-        ...
-      );
-    }
-    ...
-  ```
 ## Usage
 
 ```javascript
-import RNExitApp from 'react-native-exit-app';
-...
-RNExitApp.exitApp();
-...
+import AppControl from 'react-native-app-control';
+
+AppControl.Exit();
+AppControl.Restart();
 ```
 
-## Versioning
+## Compatibility
 
-This project uses semantic versioning: MAJOR.MINOR.PATCH.
-This means that releases within the same MAJOR version are always backwards compatible. For more info see [semver.org](http://semver.org/).
+### React Native versions
+- **Old architecture**: ✅
+- **New architecture**: ✅
+
+### Platforms
+
+- **Android**: ✅ (Tested on Android >= 12)
+- **iOS**: ✅ (Tested on iOS >= 18)
+- **Web**: ❌ (Not supported)
+
+## Credits
+
+This library is based on the [react-native-exit-app](https://github.com/wumke/react-native-exit-app) library by [wumke](https://github.com/wumke).

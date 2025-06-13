@@ -7,13 +7,13 @@
 #endif
 
 #if RCT_NEW_ARCH_ENABLED
-#import <React-Codegen/RNExitAppSpec/RNExitAppSpec.h>
+#import <React-Codegen/RNAppControlSpec/RNAppControlSpec.h>
 #endif
 
-@interface RNExitApp : NSObject <RCTBridgeModule>
+@interface RNAppControl : NSObject <RCTBridgeModule>
 @end
 
 #if RCT_NEW_ARCH_ENABLED
-@interface RNExitApp () <NativeRNExitAppSpec>
+@interface RNAppControl () <NativeRNAppControlSpec>
 @end
 #endif

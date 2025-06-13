@@ -2,7 +2,8 @@ import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
-    exitApp: () => void;
+    Exit: () => void;
+    Restart: () => void;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('RNExitApp');
+export default TurboModuleRegistry.getEnforcing<Spec>('RNAppControl');

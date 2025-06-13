@@ -1,14 +1,14 @@
 {
-  "name": "react-native-exit-app",
-  "version": "2.0.0",
-  "description": "Exit,close,kill,shutdown app completely for React Native on iOS and Android.",
+  "name": "react-native-app-control",
+  "version": "1.0.0",
+  "description": "Exit & Restart app completely for React Native on iOS and Android.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wumke/react-native-exit-app"
+    "url": "https://github.com/Gerem66/react-native-app-control"
   },
   "types": "index.d.ts",
   "keywords": [
@@ -21,18 +21,22 @@
     "android",
     "ios"
   ],
-  "author": "Wumke",
+  "author": "Gerem66",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wumke/react-native-exit-app/issues"
+    "url": "https://github.com/Gerem66/react-native-app-control/issues"
   },
-  "homepage": "https://github.com/wumke/react-native-exit-app",
+  "homepage": "https://github.com/Gerem66/react-native-app-control",
   "codegenConfig": {
-    "name": "RNExitAppSpec",
+    "name": "RNAppControlSpec",
     "type": "modules",
     "jsSrcsDir": ".",
     "android": {
-      "javaPackageName": "com.github.wumke.RNExitApp"
+      "javaPackageName": "com.github.Gerem66.RNAppControl"
     }
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }

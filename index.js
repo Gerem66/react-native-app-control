@@ -1,9 +1,12 @@
-import NativeRNExitApp from "./NativeRNExitApp";
+import NativeRNAppControl from "./NativeRNAppControl";
 
-var RNExitApp = {
-  exitApp: function() {
-    NativeRNExitApp.exitApp();
+var RNAppControl = {
+  Exit: function() {
+    NativeRNAppControl.Exit();
+  },
+  Restart: function() {
+    NativeRNAppControl.Restart();
   }
 };
 
-export default RNExitApp;
+export default RNAppControl;

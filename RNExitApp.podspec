@@ -10,7 +10,7 @@ repository = packageJson["repository"]["url"]
 iqVersion = version.split('-').first
 
 Pod::Spec.new do |s|
-	s.name           = "RNExitApp"
+	s.name           = "RNAppControl"
 	s.version        = version
 	s.description    = description
 	s.homepage       = homepage
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 	s.source         = { :git => repository, :tag => version }
 	s.platforms      = { :ios => "9.0", :tvos => "11.0" }
 	s.preserve_paths = 'README.md', 'package.json', '*.js'
-	s.source_files   = 'ios/RNExitApp/**/*.{h,m,mm}'
+	s.source_files   = 'ios/RNAppControl/**/*.{h,m,mm}'
 
 	s.dependency 'React-Core'
   
