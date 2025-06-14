@@ -30,6 +30,17 @@ AppControl.Exit();
 AppControl.Restart();
 ```
 
+### Platform-specific behavior
+
+#### iOS
+
+On iOS, `AppControl.Restart()` displays a localized popup before closing the app.  
+The popup language is automatically detected from the device's system language.
+
+#### Android
+
+On Android, `AppControl.Restart()` performs a complete app restart without showing a popup.
+
 ## Compatibility
 
 ### React Native versions
