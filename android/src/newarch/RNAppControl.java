@@ -1,10 +1,9 @@
-package com.github.Gerem66.RNAppControl;
+package com.gerem66.RNAppControl;
 
 import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.ReactApplicationContext;
-
-import com.github.Gerem66.RNAppControl.NativeRNAppControlSpec;
+import com.gerem66.RNAppControl.specs.NativeRNAppControlSpec;
 
 public class RNAppControl extends NativeRNAppControlSpec {
 
@@ -15,12 +14,6 @@ public class RNAppControl extends NativeRNAppControlSpec {
         delegate = new RNAppControlImpl(reactContext);
     }
 
-    @NonNull
-    @Override
-    public String getName() {
-        return RNAppControlImpl.NAME;
-    }
-    
     @Override
     public void Exit() {
         delegate.Exit();

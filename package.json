@@ -1,6 +1,6 @@
 {
   "name": "react-native-app-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Exit & Restart app completely for React Native on iOS and Android.",
   "main": "index.js",
   "scripts": {
@@ -32,9 +32,9 @@
   "codegenConfig": {
     "name": "RNAppControlSpec",
     "type": "modules",
-    "jsSrcsDir": ".",
+    "jsSrcsDir": "src",
     "android": {
-      "javaPackageName": "com.github.Gerem66.RNAppControl"
+      "javaPackageName": "com.gerem66.RNAppControl"
     }
   },
   "peerDependencies": {

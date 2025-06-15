@@ -1,4 +1,4 @@
-import NativeRNAppControl from "./NativeRNAppControl";
+import NativeRNAppControl from "./src/NativeRNAppControl";
 
 var RNAppControl = {
   Exit: function() {

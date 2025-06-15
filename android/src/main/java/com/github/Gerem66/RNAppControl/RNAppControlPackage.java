@@ -1,4 +1,4 @@
-package com.github.Gerem66.RNAppControl;
+package com.gerem66.RNAppControl;
 
 import androidx.annotation.Nullable;
 
