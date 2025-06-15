@@ -40,10 +40,10 @@ jobs:
           path: |
             ./android/*
             ./ios/*
+            ./src/*
             ./*.podspec
             ./index.js
             ./index.d.ts
-            ./NativeRNAppControl.ts
             ./package.json
             ./README.md
             ./LICENSE
